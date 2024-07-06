@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Calling</title>
+  <link rel="shortcut icon" type="image/png" href="{% static 'css/Images/logo.png' %}" >
+  
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+  <body><br><br><br>
+    <h1 style="text-align: center; color: white; font-size: 50px; font-weight: bold;">Welcome to Video Calling </h1>
+    <h2 style="text-align: center; color: white; font-size: 50px; font-weight: bold;">For all your professional and personal needs!</h2>
+    <div class="intro">
+        
+        <!-- create a signup and signin button-->
+        <a href="{% url 'login' %}" class="button">SIGN IN</a>
+        <a href="{% url 'register' %}" class="button">SIGN UP</a>
+        
+        
+      
+        
+      </div>
+      
+     
+      {%include 'a1/footer.html'%}
